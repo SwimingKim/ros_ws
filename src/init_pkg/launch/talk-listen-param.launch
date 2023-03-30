@@ -1,0 +1,7 @@
+<launch>
+	<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"/>
+	<node pkg="init_pkg" type="talk_param.py" name="node_param">
+		<param name="circle_size" value="5" />
+	</node>
+	<node pkg="init_pkg" type="listener.py" name="listen_node" output="screen"/>
+</launch>

@@ -1,0 +1,4 @@
+<launch>
+	<node pkg="custom_message" type="publisher.py" name="publisher"/>
+	<node pkg="custom_message" type="subscriber.py" name="subscriber" output="screen"/>
+</launch>

@@ -1,0 +1,2 @@
+custom_message:init_pkg
+-DCATKIN_DEVEL_PREFIX=/home/skim/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/skim/ros_ws/install -G Unix Makefiles

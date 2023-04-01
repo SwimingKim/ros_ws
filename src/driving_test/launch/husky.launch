@@ -1,0 +1,5 @@
+<launch>
+    <include file="$(find husky_gazebo)/launch/husky_empty_world.launch" name="empty_world"/>
+    <include file="$(find husky_viz)/launch/view_robot.launch" launch-prefix="bash -c 'sleep $(arg empty_world); $0 $@' "/>
+	<!-- <node pkg="driving_test" type="husky.py" name="control" output="screen"/> -->
+</launch>
